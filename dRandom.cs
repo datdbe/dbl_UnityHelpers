@@ -50,3 +50,11 @@ public static class dRandom
     #endregion
 
 }
+
+public static class dRandomExtensions
+{
+    public static T RandomElement<T>(this List<T> t)
+    {
+        return dRandom.RandomElement(t);
+    }
+}
